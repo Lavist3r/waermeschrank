@@ -1,11 +1,11 @@
 #! /bin/sh
 ### BEGIN INIT INFO
-# Provides: waermeschrank_v1.0.1copy.py
-# Required-Start: $syslog
-# Required-Stop: $syslog
-# Default-Start: 2 3 4 5
-# Default-Stop: 0 1 6
-# Short-Description: waermeschrank_v1.0.1copy.py
+# Provides: waermeschrank_v2.0.py
+# Required-Start: 	$all
+# Required-Stop:
+# Default-Start:	5
+# Default-Stop:		6
+# Short-Description: waermeschrank_v2.0.py
 # Description:
 ### END INIT INFO
  
@@ -21,7 +21,7 @@ case "$1" in
     stop)
         echo "waermeschrank wird beendet"
         # Beende Programm
-        killall waermeschrank_v1.0.1.py
+        killall waermeschrank_v2.0.py
         ;;
     *)
         echo "Benutzt: /etc/init.d/waermeschrank {start|stop}"
