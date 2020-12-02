@@ -1,5 +1,5 @@
 # waermeschrank
-Wärmeschrank zur Überprüfung von I/O-Modulen (Gantner e.bloxx)
+Wärmeschrank zur Überprüfung von Busmodulen (Gantner e.bloxx)
 
 Im Rahmen der Messdatenerfassung der Luft- und Erdbodentemperatur auf den Messfeldern des Deutschen Wetterdienst kommt es in aktueller Situation zum verstärkten Auftreten von Profibusstörungen, hervorgerufen durch gealterte Busmodule der Firma Gantner.
 Annahme der Ursache: Wahrscheinliche Ursache sind drei Elektrolytkondensatoren, die durch die Direkte Sonneneinstrahlung erhöhte Temperatur im Innenraum des Erdbodenanschlusskastens, zur vorzeitigen Beendigung der Lebensdauer der besagten Kondensatoren führten (Austrocknen).
