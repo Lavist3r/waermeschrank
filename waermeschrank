@@ -1,0 +1,32 @@
+#! /bin/sh
+### BEGIN INIT INFO
+# Provides: waermeschrank_v1.0.1copy.py
+# Required-Start: $syslog
+# Required-Stop: $syslog
+# Default-Start: 2 3 4 5
+# Default-Stop: 0 1 6
+# Short-Description: waermeschrank_v1.0.1copy.py
+# Description:
+### END INIT INFO
+ 
+PATH=/sbin:/bin:/usr/sbin:/usr/bin 
+ 
+case "$1" in
+    start)
+        echo "waermeschrank wird gestartet" 
+        # Starte Programm
+	sudo mount -a
+        /usr/bin/python /home/pi/GANTNER_Waermeschrank/python/program/waermeschrank_v2.0.py &
+        ;;
+    stop)
+        echo "waermeschrank wird beendet"
+        # Beende Programm
+        killall waermeschrank_v1.0.1.py
+        ;;
+    *)
+        echo "Benutzt: /etc/init.d/waermeschrank {start|stop}"
+        exit 1
+        ;;
+esac
+ 
+exit 0
